@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Background Image Webpage</title>
+    <style>
+      body {
+        background-image: url("images/flowers.jpeg");
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1024px;
+        margin: 0 auto; /* This centers the body horizontally */
+        font-family: "Courier", slab-serif;
+
+      }
+      main {
+        
+        text-align: center;
+        
+      }
+      @keyframes rythm {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+      #img1{
+    animation: rythm 2s infinite;
+}
+    outline{
+        font-size: 25px;
+ 
+        color: rgb(190, 74, 151);
+        text-shadow: 
+              -1px -1px 0 #000,
+               1px -1px 0 #000,
+              -1px 1px 0 #000,
+               1px 1px 0 #000; 
+    }
+    nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(95, 214, 59);
+}
+
+nav a:hover {
+  background-color: rgb(190, 74, 151);
+  color: #fff;
+}
+
+nav a:focus {
+  outline: none;
+}
+
+nav a:active {
+  background-color: rgb(190, 74, 151);
+  color: #fff;
+}
+
+nav a:not(:last-child) {
+  margin-right: 20px;
+}
+.my-element {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+    .rounded {
+      border-radius: 50px;
+    }
+    
+    /* Add square corners to the second image */
+    .square {
+      border-radius: 0;
+    }
+    
+    /* Arrange images in a row */
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /* Adjust image size */
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+    /* text next to image*/
+    .img_deg{
+      float: left;
+      width: 60%;
+    
+    }
+    /* button on image*/
+    .image-container {
+  position: relative;
+  
+}
+
+.overlay-text {
+  position:absolute;
+  top: 85%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Courier", slab-serif;
+}
+.button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+    
+    </style>
+  </head>
+  <body>
+    <main>
+        <outline>
+          <header>
+            <h1>Welcome To Webpage!</h1>
+            <h2>Created By</h2>
+            <h1>Rhythmpreet Kaur</h1>
+            <h2>N01481415</h2>
+          </header>
+       </outline>
+       
+    
+      
+      <nav>
+        <ul class="my-element">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="image-row">
+        <img src="images/clouds.jpeg" class="rounded">
+        <img id = "img1" src="images/background.jpeg" class="square">
+        <img src="images/jellyfish.jpeg" class="rounded">
+      </div>
+    <div class="image-container"></div>
+      <img class="img_deg" src="images/jellyfish.jpeg" alt=""My Image">
+      <div class="overlay-text">Overlay Text
+        <a href="index1.html" class="button">Click Me</a>
+      </div>
+    </div>
+      
+      <p>Jellyfish and sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the 
+        subphylum Medusozoa, a major part of the phylum Cnidaria. Jellyfish are mainly free-swimming marine animals with.
+        
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+          <li>List item 3</li>
+        </ul>
+    
+</div>
+      
+      </p>
+    <footer color: black;>
+      <p>&copy; 2023 Background Image Webpage</p>
+    </footer>
+    </main>
+  </body>
+</html>
